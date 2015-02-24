@@ -84,3 +84,10 @@ let g:airline#extensions#tabline#enabled = 1 " Display buffers on top
 map <leader>f :CtrlP<CR>
 map <leader>b :CtrlPBuffer<CR>
 map <leader>m :CtrlPMRU<CR>
+
+" Syntastic
+" let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_highlighting=1
+" let g:syntastic_auto_jump=0
