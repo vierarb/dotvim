@@ -77,8 +77,7 @@ nnoremap <C-l> <C-w>l
 
 " Plugins
 " Airline configuration
-let g:airline_powerline_fonts = 1            " Use powerline fonts
-let g:airline#extensions#tabline#enabled = 1 " Display buffers on top
+let g:airline_powerline_fonts = 1 " Use powerline fonts
 
 " Invoke CtrlP
 map <Leader>f :CtrlP<CR>
