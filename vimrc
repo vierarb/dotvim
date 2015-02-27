@@ -68,8 +68,8 @@ augroup END " }
 let mapleader=',' " Use comma as <Leader> key instead of \
 
 " Buffer remapings
-nnoremap <leader>w <C-w>v<C-w>l " Open a vertical window and switch over it
-nnoremap <leader>W <C-w>s<C-w>j " Open a horizontal window and switch over it
+nnoremap <Leader>w <C-w>v<C-w>l " Open a vertical window and switch over it
+nnoremap <Leader>W <C-w>s<C-w>j " Open a horizontal window and switch over it
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -81,9 +81,9 @@ let g:airline_powerline_fonts = 1            " Use powerline fonts
 let g:airline#extensions#tabline#enabled = 1 " Display buffers on top
 
 " Invoke CtrlP
-map <leader>f :CtrlP<CR>
-map <leader>b :CtrlPBuffer<CR>
-map <leader>m :CtrlPMRU<CR>
+map <Leader>f :CtrlP<CR>
+map <Leader>b :CtrlPBuffer<CR>
+map <Leader>m :CtrlPMRU<CR>
 
 " Syntastic
 " let g:syntastic_always_populate_loc_list = 1
