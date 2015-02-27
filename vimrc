@@ -85,8 +85,29 @@ map <Leader>b :CtrlPBuffer<CR>
 map <Leader>m :CtrlPMRU<CR>
 
 " Syntastic
-" let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-let g:syntastic_check_on_open=1
-let g:syntastic_enable_highlighting=1
-" let g:syntastic_auto_jump=0
+let g:syntastic_ruby_checkers=['mri', 'rubocop']
+
+" Enable this option to tell syntastic to always stick any detected errors into
+" the location-list
+let g:syntastic_always_populate_loc_list=1
+
+" Use this option to tell syntastic to automatically open and/or close the
+" location-list.
+" When set to 1 the error window will be automatically opened when errors are
+" detected, and closed when none are detected.
+let g:syntastic_auto_loc_list=1
+
+" If enabled, syntastic will error message associated with the current line to
+" the command window. If multiple errors are found, the first will be used.
+let g:syntastic_echo_current_error=1
+
+" Use this option to tell syntastic whether to use the |:sign| interface to
+" mark syntax errors:
+let g:syntastic_enable_signs=1
+
+" Use this option to control what the syntastic |:sign| text contains. Several
+" error symobls can be customized:
+let g:syntastic_error_symbol='✗✗'
+let g:syntastic_warning_symbol='⚠⚠'
+let g:syntastic_style_error_symbo='S✗'
+let g:syntastic_style_warning_symbol='S⚠'
