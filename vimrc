@@ -70,10 +70,6 @@ let mapleader=',' " Use comma as <Leader> key instead of \
 " Buffer remapings
 nnoremap <Leader>w <C-w>v<C-w>l " Open a vertical window and switch over it
 nnoremap <Leader>W <C-w>s<C-w>j " Open a horizontal window and switch over it
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 
 " Plugins
 " Airline configuration
