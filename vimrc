@@ -48,7 +48,7 @@ set gdefault           " When replacing, substitute all ocurrences in a line
 nnoremap <CR> :noh<CR> " Remove search highlight when pressing Enter key
 
 if has('gui_macvim')
-  colorscheme Monokai-chris
+  colorscheme grb256
 
   set transparency=10
 
@@ -103,7 +103,7 @@ let g:syntastic_enable_signs=1
 
 " Use this option to control what the syntastic |:sign| text contains. Several
 " error symobls can be customized:
-let g:syntastic_error_symbol='✗✗'
-let g:syntastic_warning_symbol='⚠⚠'
-let g:syntastic_style_error_symbo='S✗'
-let g:syntastic_style_warning_symbol='S⚠'
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_style_error_symbo='✗'
+let g:syntastic_style_warning_symbol='⚠'
