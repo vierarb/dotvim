@@ -98,8 +98,8 @@ let g:airline_powerline_fonts = 1 " Use powerline fonts
 
 " Invoke CtrlP
 map <Leader>f :CtrlP<CR>
-map <Leader>b :CtrlPBuffer<CR>
-map <Leader>m :CtrlPMRU<CR>
+"map <Leader>b :CtrlPBuffer<CR>
+"map <Leader>m :CtrlPMRU<CR>
 
 " Syntastic
 let g:syntastic_ruby_checkers=['mri', 'rubocop']
