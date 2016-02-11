@@ -1,12 +1,29 @@
+set nocompatible    " Prefer vim behaviour over vi when both have default values
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'jlanzarotta/bufexplorer'
+
+call vundle#end()
+
 if has('autocmd')
   filetype plugin indent on " Identation based on file type
 endif
 
-execute pathogen#infect()
-
 syntax on
 
-set nocompatible    " Prefer vim behaviour over vi when both have default values
 set encoding=utf-8  " File encoding to utf-8
 set cursorline      " Highlight the current line
 set hidden          " Hide buffer instead of close when abandoned
