@@ -100,6 +100,7 @@ map <Leader>m :CtrlPMRU<CR>
 
 " Syntastic
 let g:syntastic_ruby_checkers=['mri', 'rubocop']
+let g:syntastic_disabled_filetypes=['sass', 'scss']
 
 " Enable this option to tell syntastic to always stick any detected errors into
 " the location-list
