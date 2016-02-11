@@ -24,6 +24,7 @@ endif
 
 syntax on
 
+"set nocompatible    " Prefer vim behaviour over vi when both have default values
 set encoding=utf-8  " File encoding to utf-8
 set cursorline      " Highlight the current line
 set hidden          " Hide buffer instead of close when abandoned
