@@ -15,6 +15,7 @@ Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'sirtaj/vim-openscad'
 
 call vundle#end()
 
