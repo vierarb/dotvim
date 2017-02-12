@@ -127,6 +127,6 @@ let g:syntastic_enable_signs=1
 " Use this option to control what the syntastic |:sign| text contains. Several
 " error symobls can be customized:
 let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
+let g:syntastic_warning_symbol='!'
 let g:syntastic_style_error_symbo='✗'
-let g:syntastic_style_warning_symbol='⚠'
+let g:syntastic_style_warning_symbol='!'
