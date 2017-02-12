@@ -88,11 +88,11 @@ let mapleader=',' " Use comma as <Leader> key instead of \
 
 " General remapings
 imap jj    <Esc>
-nmap <Tab> <C-w>w
 
 " Buffer remapings
 nnoremap <Leader>w <C-w>v<C-w>l " Open a vertical window and switch over it
 nnoremap <Leader>W <C-w>s<C-w>j " Open a horizontal window and switch over it
+nmap <Tab> <C-w>w
 
 " Plugins
 " Airline configuration
