@@ -87,7 +87,8 @@ augroup END " }
 let mapleader=',' " Use comma as <Leader> key instead of \
 
 " General remapings
-imap jj <Esc>
+imap jj    <Esc>
+nmap <Tab> <C-w>w
 
 " Buffer remapings
 nnoremap <Leader>w <C-w>v<C-w>l " Open a vertical window and switch over it
