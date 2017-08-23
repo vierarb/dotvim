@@ -16,6 +16,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'sirtaj/vim-openscad'
+Plugin 'ayu-theme/ayu-vim'
 
 call vundle#end()
 
@@ -67,9 +68,7 @@ set gdefault           " When replacing, substitute all ocurrences in a line
 nnoremap <CR> :noh<CR> " Remove search highlight when pressing Enter key
 
 if has('gui_macvim')
-  colorscheme grb256
-
-  set transparency=10
+  set transparency=5
 
   " set guifont=Monaco:h12
   set guifont=Inconsolata-dz\ for\ Powerline:h12
@@ -77,6 +76,10 @@ if has('gui_macvim')
   set guioptions-=r "Removes right hand scrollbar
   set guioptions-=L "Removes left hand scrollbar
 end
+
+set termguicolors     " enable true colors support
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 
 " Source the vimrc file after saving it
 augroup reload_vimrc " {
