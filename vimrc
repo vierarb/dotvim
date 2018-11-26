@@ -32,6 +32,7 @@ set cursorline      " Highlight the current line
 set hidden          " Hide buffer instead of close when abandoned
 set laststatus=2    " Always display file status (name, lines, percentage...)
 set nobackup        " No backup file
+" set backupcopy=yes
 set noswapfile      " 
 set relativenumber  " Show line number relative to current line
 set visualbell      " No beep
@@ -77,8 +78,8 @@ if has('gui_macvim')
   set guioptions-=L "Removes left hand scrollbar
 end
 
-set termguicolors     " enable true colors support
-let ayucolor="dark"   " for dark version of theme
+" set termguicolors     " enable true colors support
+" let ayucolor="dark" " for mirage version of theme
 colorscheme ayu
 
 " Source the vimrc file after saving it
@@ -107,8 +108,8 @@ map <Leader>f :CtrlP<CR>
 "map <Leader>m :CtrlPMRU<CR>
 
 " Syntastic
+let g:syntastic_mode_map={ "mode": "active", "passive_filetypes": ["scss"] }
 let g:syntastic_ruby_checkers=['mri', 'rubocop']
-let g:syntastic_disabled_filetypes=['sass', 'scss']
 
 " Enable this option to tell syntastic to always stick any detected errors into
 " the location-list
