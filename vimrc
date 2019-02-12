@@ -31,8 +31,8 @@ set encoding=utf-8  " File encoding to utf-8
 set cursorline      " Highlight the current line
 set hidden          " Hide buffer instead of close when abandoned
 set laststatus=2    " Always display file status (name, lines, percentage...)
-set nobackup        " No backup file
-" set backupcopy=yes
+" set nobackup        " No backup file
+set backupcopy=yes
 set noswapfile      " 
 set relativenumber  " Show line number relative to current line
 set visualbell      " No beep
@@ -72,7 +72,7 @@ if has('gui_macvim')
   set transparency=5
 
   " set guifont=Monaco:h12
-  set guifont=Inconsolata-dz\ for\ Powerline:h12
+  set guifont=Inconsolata\ for\ Powerline:h14
   set guioptions-=T "Removes top toolbar
   set guioptions-=r "Removes right hand scrollbar
   set guioptions-=L "Removes left hand scrollbar
