@@ -9,7 +9,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/taglist.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-fugitive'
@@ -98,6 +98,9 @@ nnoremap <Leader>w <C-w>v<C-w>l " Open a vertical window and switch over it
 nnoremap <Leader>W <C-w>s<C-w>j " Open a horizontal window and switch over it
 nmap <Tab> <C-w>w
 
+" Tagbar remaping
+map <Leader>t :TagbarToggle<CR>
+
 " Plugins
 " Airline configuration
 let g:airline_powerline_fonts = 1 " Use powerline fonts
@@ -106,6 +109,9 @@ let g:airline_powerline_fonts = 1 " Use powerline fonts
 map <Leader>f :CtrlP<CR>
 "map <Leader>b :CtrlPBuffer<CR>
 "map <Leader>m :CtrlPMRU<CR>
+
+" Tagbar
+let g:tagbar_left=1
 
 " Syntastic
 let g:syntastic_mode_map={ "mode": "active", "passive_filetypes": ["scss"] }
